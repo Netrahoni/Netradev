@@ -25,6 +25,7 @@ import {
   threejs,
   chess,
   payroll,
+  ml,
 } from "../assets";
 
 export const navLinks = [
@@ -217,7 +218,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: chess,
+    image: payroll,
     source_code_link: "https://github.com/Netrahoni/SmartPayroll",
     live_demo_link: "https://smart-payroll-two.vercel.app",
   },
@@ -239,31 +240,31 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: payroll,
+    image: chess,
     source_code_link: "https://github.com/Netrahoni/Chess-AI",
     live_demo_link: "https://chess-final-yow5.vercel.app",
   },
   {
-    name: "Interactive Chess Application",
+    name: "Credit Card Fraud Detection",
     description:
-      "A fully interactive Human vs. Human chess game built in Java with Java Swing. Features real-time state management, OOP architecture, dynamic game timers, drag-and-drop, and a captured piece tracker.",
+      "A machine learning project designed to detect fraudulent credit card transactions. Compares models like KNN, Decision Trees, SVM, and Logistic Regression on European cardholder data to achieve up to 100% detection accuracy.",
     tags: [
       {
-        name: "java",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "java-swing",
+        name: "machine-learning",
         color: "green-text-gradient",
       },
       {
-        name: "oop",
+        name: "colab",
         color: "pink-text-gradient",
       },
     ],
-    image: payroll,
-    source_code_link: "https://github.com/Netrahoni/Chess-final",
-    live_demo_link: "https://chess-final-yow5.vercel.app",
+    image: ml,
+    source_code_link: "https://colab.research.google.com/drive/1_Ei2oUstLcXZYnYkAAs1r1rD1PtJFDXr",
+    live_demo_link: "https://colab.research.google.com/drive/1_Ei2oUstLcXZYnYkAAs1r1rD1PtJFDXr",
   },
 ];
 

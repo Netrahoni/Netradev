@@ -31,6 +31,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import chess from "./chess.png";
 import payroll from "./payroll.png";
+import ml from "./ml.png";
 
 export {
   logo,
@@ -63,4 +64,5 @@ export {
   tripguide,
   chess,
   payroll,
+  ml,
 };

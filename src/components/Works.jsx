@@ -15,6 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_demo_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -24,7 +25,8 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer'
+        onClick={() => window.open(live_demo_link || source_code_link, "_blank")}
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -33,10 +35,39 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
+            {live_demo_link && live_demo_link !== source_code_link && (
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  window.open(live_demo_link, "_blank");
+                }}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                title="Live Demo"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-1/2 h-1/2 text-white"
+                >
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </div>
+            )}
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(source_code_link, "_blank");
+              }}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              title="GitHub Repo"
             >
               <img
                 src={github}

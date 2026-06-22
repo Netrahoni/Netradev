@@ -216,7 +216,8 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/Netrahoni",
+    source_code_link: "https://github.com/Netrahoni/SmartPayroll",
+    live_demo_link: "https://smart-payroll-two.vercel.app",
   },
   {
     name: "Chess AI Engine",
@@ -237,7 +238,8 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/Netrahoni",
+    source_code_link: "https://github.com/Netrahoni/Chess-AI",
+    live_demo_link: "https://github.com/Netrahoni/Chess-AI",
   },
   {
     name: "Interactive Chess Application",
@@ -258,7 +260,8 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/Netrahoni",
+    source_code_link: "https://github.com/Netrahoni/Chess-final",
+    live_demo_link: "https://github.com/Netrahoni/Chess-final",
   },
 ];
 

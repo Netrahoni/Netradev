@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  chess,
+  payroll,
 } from "../assets";
 
 export const navLinks = [
@@ -215,7 +217,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: payroll,
     source_code_link: "https://github.com/Netrahoni/SmartPayroll",
     live_demo_link: "https://smart-payroll-two.vercel.app",
   },
@@ -237,7 +239,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: chess,
     source_code_link: "https://github.com/Netrahoni/Chess-AI",
     live_demo_link: "https://chess-final-yow5.vercel.app",
   },
@@ -259,7 +261,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: chess,
     source_code_link: "https://github.com/Netrahoni/Chess-final",
     live_demo_link: "https://chess-final-yow5.vercel.app",
   },

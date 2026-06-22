@@ -239,7 +239,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/Netrahoni/Chess-AI",
-    live_demo_link: "https://github.com/Netrahoni/Chess-AI",
+    live_demo_link: "https://chess-final-yow5.vercel.app",
   },
   {
     name: "Interactive Chess Application",
@@ -261,7 +261,7 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/Netrahoni/Chess-final",
-    live_demo_link: "https://github.com/Netrahoni/Chess-final",
+    live_demo_link: "https://chess-final-yow5.vercel.app",
   },
 ];
 

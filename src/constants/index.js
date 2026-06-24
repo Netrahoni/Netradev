@@ -119,55 +119,26 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Meta Front-End Developer",
-    company_name: "Coursera (Certified)",
-    icon: meta,
-    iconBg: "#383E56",
-    date: "Early 2024",
-    points: [
-      "Completed Meta's professional front-end developer certification via Coursera.",
-      "Built and deployed responsive web applications using React.js best practices.",
-      "Learned accessibility standards, component architecture, and version control.",
-      "Applied knowledge to real-world projects involving UI/UX and web performance.",
-    ],
-  },
-  {
-    title: "Data Analytics Workshop Participant",
-    company_name: "AGC (5-Day Workshop)",
-    icon: shopify,
-    iconBg: "#E6DEDD",
-    date: "Mid 2024",
-    points: [
-      "Participated in a 5-day intensive Hands-on Data Analytics workshop at AGC.",
-      "Worked with Python libraries including Pandas and Matplotlib for data exploration.",
-      "Analyzed real-world datasets and built visualizations to derive meaningful insights.",
-      "Gained exposure to Big Data concepts and database management techniques.",
-    ],
-  },
-  {
-    title: "Nepali Student Association — Secretary",
-    company_name: "Amritsar Group of Colleges",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "Sept 2024 – Sept 2025",
-    points: [
-      "Represented the student body and led teams to organize the annual Dashain festival for 100+ guests.",
-      "Managed all documentation, budgets, and liaison with college department heads.",
-      "Coordinated cultural events and ensured smooth execution of student-focused programs.",
-      "Built leadership, administration, and team communication skills in a large institution.",
-    ],
-  },
-  {
-    title: "Placement Cell Technical Coordinator",
-    company_name: "Amritsar Group of Colleges",
+    title: "President",
+    company_name: "Placement Committee – Amritsar Group of Colleges",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Nov 2025 – Jun 2026",
+    date: "April 2026 – July 2026",
     points: [
-      "Leveraged Generative AI for student prep and leading social media/branding initiatives.",
-      "Designed digital assets and managed outreach for corporate recruitment drives.",
-      "Coordinated with HR teams and external companies for campus placement events.",
-      "Improved student visibility through strategic AI-powered content creation.",
+      "AI Integration: Leveraged Generative AI tools to automate corporate branding asset creation and optimize workload workflows, while scaling personalized placement related events frameworks.",
+      "Corporate Branding: Spearheaded digital asset creation and strategic media outreach for high-volume corporate recruitment drives.",
+      "Team Management: Led a committee of student coordinators to organize campus-wide placement activities and corporate engagement events.",
+    ],
+  },
+  {
+    title: "Secretary",
+    company_name: "Nepali Student Association (NSA) – AGC",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "September 2024 – July 2026",
+    points: [
+      "Operations Management: Handled end-to-end documentation, financial budgeting, and administrative liaison with college department heads.",
+      "Event Logistics: Headed cross-functional student teams to successfully design and host regional cultural festivals hosting over 100+ guests.",
     ],
   },
 ];
@@ -201,9 +172,57 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Credit Card Fraud Detection",
+    description:
+      "Developed a Logistic Regression model achieving 87% accuracy in predicting fraudulent financial transactions. Reduced false positives by 16% via hyperparameter tuning and resolved extreme class imbalance for a 15% performance boost. Engineered a threshold-optimized function for live decision-making and serialized the final model using Joblib.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scikit-learn",
+        color: "green-text-gradient",
+      },
+      {
+        name: "pandas",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ml,
+    source_code_link: "https://colab.research.google.com/drive/1_Ei2oUstLcXZYnYkAAs1r1rD1PtJFDXr",
+    live_demo_link: "https://colab.research.google.com/drive/1_Ei2oUstLcXZYnYkAAs1r1rD1PtJFDXr",
+  },
+  {
+    name: "Chess AI Engine & Web Application",
+    description:
+      "Built a real-time chess engine using Minimax with Alpha-Beta Pruning to optimize move search depths. Hosted heavy AI calculations in Supabase Edge Functions to offload computation from the browser client. Managed international rules, validation logs, and countdown timers via React hooks with a TypeScript/Tailwind UI.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: chess,
+    source_code_link: "https://github.com/Netrahoni/Chess-AI",
+    live_demo_link: "https://chess-final-yow5.vercel.app",
+  },
+  {
     name: "Smart Payroll Management System",
     description:
-      "A full-stack web application to automate employee management and salary calculations. Features real-time attendance tracking, leave management, automated PDF payslip generation, and secure NoSQL data storage.",
+      "Built a full-stack MongoDB, Express.js, React, and Node.js web application to automate workforce administration. Created RESTful APIs and secure dashboards to automate real-time attendance tracking and complex salary/tax math. Integrated backend pipelines to dynamically generate and display encrypted PDF payslips for employees.",
     tags: [
       {
         name: "react",
@@ -217,54 +236,14 @@ const projects = [
         name: "mongodb",
         color: "pink-text-gradient",
       },
-    ],
-    image: chess,
-    source_code_link: "https://github.com/Netrahoni/SmartPayroll",
-    live_demo_link: "https://smart-payroll-two.vercel.app",
-  },
-  {
-    name: "Chess AI Engine",
-    description:
-      "A functional Chess Engine in Python using the Minimax algorithm with Alpha-Beta pruning for strategic decision-making. Supports full game logic including move validation, castling, en passant, and promotion.",
-    tags: [
       {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "minimax",
-        color: "green-text-gradient",
-      },
-      {
-        name: "alpha-beta-pruning",
-        color: "pink-text-gradient",
+        name: "express",
+        color: "orange-text-gradient",
       },
     ],
     image: payroll,
-    source_code_link: "https://github.com/Netrahoni/Chess-AI",
-    live_demo_link: "https://chess-final-yow5.vercel.app",
-  },
-  {
-    name: "Credit Card Fraud Detection",
-    description:
-      "A machine learning project designed to detect fraudulent credit card transactions. Compares models like KNN, Decision Trees, SVM, and Logistic Regression on European cardholder data to achieve up to 100% detection accuracy.",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "machine-learning",
-        color: "green-text-gradient",
-      },
-      {
-        name: "colab",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: ml,
-    source_code_link: "https://colab.research.google.com/drive/1_Ei2oUstLcXZYnYkAAs1r1rD1PtJFDXr",
-    live_demo_link: "https://colab.research.google.com/drive/1_Ei2oUstLcXZYnYkAAs1r1rD1PtJFDXr",
+    source_code_link: "https://github.com/Netrahoni/SmartPayroll",
+    live_demo_link: "https://smart-payroll-two.vercel.app",
   },
 ];
 

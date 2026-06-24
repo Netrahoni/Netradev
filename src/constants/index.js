@@ -38,6 +38,14 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "certificates",
+    title: "Certificates",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -247,4 +255,37 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const certifications = [
+  {
+    name: "Meta Front-End Developer Professional Certificate",
+    issuer: "Coursera",
+    date: "Early 2024",
+  },
+  {
+    name: "Hands-on Data Analytics 5-Day Workshop",
+    issuer: "Amritsar Group of Colleges (AGC)",
+    date: "Mid 2024",
+  },
+  {
+    name: "Introduction to Blockchain: Industry Applications",
+    issuer: "Udemy",
+    date: "Late 2024",
+  },
+  {
+    name: "Graphics Designer Certification of Appreciation",
+    issuer: "Amritsar Group of Colleges (AGC)",
+    date: "2024",
+  },
+  {
+    name: "Cloud Computing",
+    issuer: "NPTEL",
+    date: "2025",
+  },
+  {
+    name: "Introduction to Machine Learning",
+    issuer: "NPTEL",
+    date: "2025",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, certifications };

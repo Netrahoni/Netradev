@@ -260,31 +260,43 @@ const certifications = [
     name: "Meta Front-End Developer Professional Certificate",
     issuer: "Coursera",
     date: "Early 2024",
+    link: "https://www.coursera.org/professional-certificates/meta-front-end-developer",
+    image: "",
   },
   {
     name: "Hands-on Data Analytics 5-Day Workshop",
     issuer: "Amritsar Group of Colleges (AGC)",
     date: "Mid 2024",
+    link: "https://www.agcamritsar.in",
+    image: "",
   },
   {
     name: "Introduction to Blockchain: Industry Applications",
     issuer: "Udemy",
     date: "Late 2024",
+    link: "https://www.udemy.com",
+    image: "",
   },
   {
     name: "Graphics Designer Certification of Appreciation",
     issuer: "Amritsar Group of Colleges (AGC)",
     date: "2024",
+    link: "https://www.agcamritsar.in",
+    image: "",
   },
   {
     name: "Cloud Computing",
     issuer: "NPTEL",
     date: "2025",
+    link: "https://nptel.ac.in",
+    image: "",
   },
   {
     name: "Introduction to Machine Learning",
     issuer: "NPTEL",
     date: "2025",
+    link: "https://nptel.ac.in",
+    image: "",
   },
 ];
 

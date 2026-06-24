@@ -70,6 +70,9 @@ const Contact = () => {
           from_email: form.email,
           to_email: "netramanipkr@gmail.com",
           message: form.message,
+          name: form.name,
+          email: form.email,
+          title: `Portfolio Contact from ${form.name}`,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )

@@ -84,8 +84,15 @@ const Contact = () => {
         },
         (error) => {
           console.error("EmailJS error:", error);
-          // EmailJS failed — fall back to mailto
-          sendViaMailto();
+          setLoading(false);
+          setStatus({
+            type: "error",
+            message: `⚠️ EmailJS error: ${error?.text || "Unknown error"}. Opening your mail client as fallback...`,
+          });
+          // Fall back to mailto after 2 seconds so the user can read the error
+          setTimeout(() => {
+            sendViaMailto();
+          }, 2000);
         }
       );
   };

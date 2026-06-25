@@ -180,28 +180,6 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Credit Card Fraud Detection",
-    description:
-      "Developed a Logistic Regression model achieving 87% accuracy in predicting fraudulent financial transactions. Reduced false positives by 16% via hyperparameter tuning and resolved extreme class imbalance for a 15% performance boost. Engineered a threshold-optimized function for live decision-making and serialized the final model using Joblib.",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "scikit-learn",
-        color: "green-text-gradient",
-      },
-      {
-        name: "pandas",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: ml,
-    source_code_link: "https://colab.research.google.com/drive/1_Ei2oUstLcXZYnYkAAs1r1rD1PtJFDXr",
-    live_demo_link: "https://colab.research.google.com/drive/1_Ei2oUstLcXZYnYkAAs1r1rD1PtJFDXr",
-  },
-  {
     name: "Chess AI Engine & Web Application",
     description:
       "Built a real-time chess engine using Minimax with Alpha-Beta Pruning to optimize move search depths. Hosted heavy AI calculations in Supabase Edge Functions to offload computation from the browser client. Managed international rules, validation logs, and countdown timers via React hooks with a TypeScript/Tailwind UI.",
@@ -252,6 +230,28 @@ const projects = [
     image: payroll,
     source_code_link: "https://github.com/Netrahoni/SmartPayroll",
     live_demo_link: "https://smart-payroll-two.vercel.app",
+  },
+  {
+    name: "Credit Card Fraud Detection",
+    description:
+      "Developed a Logistic Regression model achieving 87% accuracy in predicting fraudulent financial transactions. Reduced false positives by 16% via hyperparameter tuning and resolved extreme class imbalance for a 15% performance boost. Engineered a threshold-optimized function for live decision-making and serialized the final model using Joblib.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scikit-learn",
+        color: "green-text-gradient",
+      },
+      {
+        name: "pandas",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ml,
+    source_code_link: "https://colab.research.google.com/drive/1_Ei2oUstLcXZYnYkAAs1r1rD1PtJFDXr",
+    live_demo_link: "https://colab.research.google.com/drive/1_Ei2oUstLcXZYnYkAAs1r1rD1PtJFDXr",
   },
 ];
 

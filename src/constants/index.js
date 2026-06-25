@@ -257,17 +257,17 @@ const projects = [
 
 const certifications = [
   {
-    name: "Meta Front-End Developer Professional Certificate",
-    issuer: "Coursera",
-    date: "Early 2024",
-    link: "https://drive.google.com/drive/folders/1wx1m8wWOW0BIrE_YHqOmKVZ8aFSHb0qG",
+    name: "Introduction to Machine Learning",
+    issuer: "NPTEL",
+    date: "2025",
+    link: "https://drive.google.com/file/d/1UNyKBvT-rPZFQ8nu3ipatLnFKiJXkIlK/view?usp=sharing",
     image: "",
   },
   {
-    name: "Hands-on Data Analytics 5-Day Workshop",
-    issuer: "Amritsar Group of Colleges (AGC)",
-    date: "Mid 2024",
-    link: "https://drive.google.com/file/d/1k2rHfnlZidhCuIbfSJKJfNYI2ChhUqVg/view?usp=sharing",
+    name: "Cloud Computing",
+    issuer: "NPTEL",
+    date: "2025",
+    link: "https://drive.google.com/file/d/1Rhh7yOJMRFy5tnmIdJ3a1T6pqVHE_9KX/view?usp=drive_link",
     image: "",
   },
   {
@@ -285,17 +285,17 @@ const certifications = [
     image: "",
   },
   {
-    name: "Cloud Computing",
-    issuer: "NPTEL",
-    date: "2025",
-    link: "https://drive.google.com/file/d/1Rhh7yOJMRFy5tnmIdJ3a1T6pqVHE_9KX/view?usp=drive_link",
+    name: "Hands-on Data Analytics 5-Day Workshop",
+    issuer: "Amritsar Group of Colleges (AGC)",
+    date: "Mid 2024",
+    link: "https://drive.google.com/file/d/1k2rHfnlZidhCuIbfSJKJfNYI2ChhUqVg/view?usp=sharing",
     image: "",
   },
   {
-    name: "Introduction to Machine Learning",
-    issuer: "NPTEL",
-    date: "2025",
-    link: "https://drive.google.com/file/d/1UNyKBvT-rPZFQ8nu3ipatLnFKiJXkIlK/view?usp=sharing",
+    name: "Meta Front-End Developer Professional Certificate",
+    issuer: "Coursera",
+    date: "Early 2024",
+    link: "https://drive.google.com/drive/folders/1wx1m8wWOW0BIrE_YHqOmKVZ8aFSHb0qG",
     image: "",
   },
 ];

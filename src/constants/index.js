@@ -26,6 +26,7 @@ import {
   chess,
   payroll,
   ml,
+  agc,
 } from "../assets";
 
 export const navLinks = [
@@ -129,8 +130,8 @@ const experiences = [
   {
     title: "President",
     company_name: "Placement Committee – Amritsar Group of Colleges",
-    icon: tesla,
-    iconBg: "#E6DEDD",
+    icon: agc,
+    iconBg: "#fff",
     date: "April 2026 – July 2026",
     points: [
       "AI Integration: Leveraged Generative AI tools to automate corporate branding asset creation and optimize workload workflows, while scaling personalized placement related events frameworks.",
@@ -141,8 +142,8 @@ const experiences = [
   {
     title: "Secretary",
     company_name: "Nepali Student Association (NSA) – AGC",
-    icon: starbucks,
-    iconBg: "#383E56",
+    icon: agc,
+    iconBg: "#fff",
     date: "September 2024 – July 2026",
     points: [
       "Operations Management: Handled end-to-end documentation, financial budgeting, and administrative liaison with college department heads.",

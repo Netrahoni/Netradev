@@ -30,6 +30,7 @@ import tripguide from "./tripguide.png";
 import chess from "./chess.png";
 import payroll from "./payroll.png";
 import ml from "./ml.png";
+import desktop_pc_mockup from "./desktop_pc_mockup.png";
 
 export {
   logo,
@@ -61,4 +62,6 @@ export {
   chess,
   payroll,
   ml,
+  desktop_pc_mockup,
 };
+

@@ -1,8 +1,10 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
+import useMobile from "../../hooks/useMobile";
+import { desktop_pc_mockup } from "../../assets";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -30,36 +32,27 @@ const Computers = ({ isMobile }) => {
 };
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useMobile(768);
 
-  useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    // Remove the listener when the component is unmounted
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
+  if (isMobile) {
+    return (
+      <div className='w-full h-[35%] absolute bottom-4 flex justify-center items-center pointer-events-none select-none px-4 z-10'>
+        <img
+          src={desktop_pc_mockup}
+          alt='Desktop Setup'
+          className='w-[90%] max-w-[480px] h-full object-contain drop-shadow-[0_20px_50px_rgba(145,94,255,0.35)]'
+        />
+      </div>
+    );
+  }
 
   return (
     <Canvas
       frameloop='demand'
       shadows
-      dpr={[1, 2]}
+      dpr={[1, 1.5]}
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{ preserveDrawingBuffer: true, antialias: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -76,3 +69,4 @@ const ComputersCanvas = () => {
 };
 
 export default ComputersCanvas;
+
